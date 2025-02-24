@@ -5,8 +5,9 @@ const cors = require('cors');
 const quizRoutes = require('./routes/quizRoutes');
 
 const app = express();
-app.use(express.json());
-app.use(cors());
+app.use(express.json()); 
+
+app.use(cors({ origin: '*' }));
 
 // Connect to MongoDB
 mongoose
