@@ -23,7 +23,7 @@ const LandingContainer = styled.div`
 `;
 
 const DynamicText = styled.h1`
-  font-size: calc(3rem * var(--base-scale) * var(--mobile-scale));
+  font-size: max(1.5rem, calc(3rem * var(--base-scale) * var(--mobile-scale)));
   margin-bottom: calc(3rem * var(--base-scale) * var(--mobile-scale));
   line-height: 1.3;
   background: linear-gradient(45deg, #fff 30%, #a5b4fc 100%);
